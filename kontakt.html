@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/kontakt.css">
+    <link rel="stylesheet" href="font awesome/all.min.css">
+    <link rel="stylesheet" href="font awesome/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="pre-header">
+        <div class="links">
+            <ul>
+                <li><a href="prijava.html"><p>Prijavite se</p></a></li>
+                <li><a href="registracija.html"><p>Registrujte se</p></a></li>
+                <li> <a href="https://www.viser.edu.rs/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.viser.edu.rs/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.viser.edu.rs/"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.viser.edu.rs/"><i class="fa-brands fa-pinterest"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/Logo.png" alt=""></a>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="onama.html">O nama</a></li>
+                    <li><a href="knjige.html">Knjige</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    
+    <h1 class="kontakt">Kontakt</h1>
+    
+    <div class="container">
+        <div class="contact-box">
+            <div class="left">
+                <h2>Kontakt</h2>
+                <p>Broj telefona: <br>011 454 0900</p>
+                <p>Adresa: <br>Sremska 2 11000 Beograd</p>
+                <p>E-mail: <br>knjizara23@gmail.com</p>
+                <p>Račun: <br>Banka Intesa 106-336484-06</p>
+                <p>Šifra delatnosti: 4761</p>
+                <p>PIB: 106614339</p>
+                <p>Matični broj: 20644834</p>
+            </div>
+            <div class="right">
+                <input type="text" class="field" placeholder="Ime" id="ime">
+                <input type="text" class="field" placeholder="Prezime" id="prezime">
+                <input type="email" class="field" placeholder="Email" id="email">
+                <input type="text" class="field" placeholder="Telefon" id="telefon">
+                <textarea class="field" placeholder="Poruka" id="poruka"></textarea>
+                <button class="btn">Pošalji</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+        <div class="row">
+            <div class="footer-col">
+                <img src="img/Logo.png" alt="">
+                <ul>
+                    <li><a href="kontakt.html"><p>knjizara23@gmail.com</p></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Glavni linkovi</h4>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="onama.html">O nama</a></li>
+                    <li><a href="knjige.html">Knjige</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>  
+            </div>
+            <div class="footer-col">
+                <h4>Zapratite nas</h4>
+                <div class="footer-icons">
+                    <a href="https://www.viser.edu.rs/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.viser.edu.rs/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.viser.edu.rs/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.viser.edu.rs/"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="after-footer">
+        <p>&copy Copyright Marko Perić 2023</p>
+    </section>
+
+
+
+    <script>
+        hamburger = document.querySelector(".hamburger")
+        hamburger.onclick = function(){
+            navMenu = document.querySelector(".nav-menu");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

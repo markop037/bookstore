@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pre-header{
+    background-color: #111618;
+    padding: 10px 0px;
+}
+
+.pre-header .links{
+    flex: 1;
+    text-align: right;
+    padding: 0 6%;
+}
+
+.pre-header ul li{
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.pre-header ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.pre-header ul li a p{
+    padding-right: 30px;
+    font-size: 13px;
+}
+
+.pre-header ul li a:hover{
+    color: gray;
+    transition: 0.4s;
+}
+
+nav{
+    display: flex;
+    padding: 15px 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 220px;
+}
+
+.nav-menu{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-menu ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-menu ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ac162c;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-menu ul li a:hover::after{
+    width: 100%;
+}
+
+.nav-menu ul li a.active::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #ac162c;
+    display: block;
+    margin: auto;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+@media(max-width:1300px){
+    
+    nav{
+        padding: 15px 50px;
+    }
+}
+
+@media(max-width:1100px){
+    
+    nav{
+        padding: 15px 30px;
+    }
+}
+
+@media(max-width:900px){
+    .hamburger .fa-solid{
+        display: block;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    .nav-menu{
+        height: 0px;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #fff;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-menu ul li{
+        display: block;
+        width: fit-content;
+        margin: 20px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-menu.active ul li{
+        opacity: 1;
+    }
+    .nav-menu.active{
+        height: 350px;
+    }
+}
+
+.gallery{
+    width: 100%;
+    text-align: center;
+}
+
+input{
+    display: none;
+}
+
+.top-content{
+    background-color: #ffeded;
+    width: 85%;
+    margin: 0 auto 20px auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.gallery h1{
+    padding: 40px 0;
+    text-transform: uppercase;
+    color: #ac162c;
+    font-size: 50px;
+}
+
+.gallery h3{
+    height: 100%;
+    background-color: #bc3c3c;
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: 600;
+    line-height: 70px;
+    padding: 0 50px;
+    text-transform: uppercase;
+}
+
+.photo-gallery{
+    align-items: center;
+    justify-content: center;
+    width: 99vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.photo-gallery img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.footer{
+    padding-top: 70px;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 70px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer img{
+    height: 55px;
+}
+
+.footer ul{
+    color: gray;
+}
+
+.footer ul li{
+    list-style: none;
+}
+
+.footer p{
+    font-size: 13px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.footer h4{
+    color: #ac162c;
+    text-transform: uppercase;
+}
+
+.footer a{
+    text-decoration: none;
+    color: gray;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer a:hover{
+    color: #ac162c;
+}
+
+.footer .footer-icons{
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.footer .footer-icons a{
+    font-size: 25px;
+    justify-content: space-between;
+    margin-right: 5px;
+}
+
+@media(max-width:770px){
+    .footer .row{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-col{
+        padding-bottom: 50px;
+    }
+
+}
+
+.after-footer{
+    background-color: #111618;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.after-footer p{
+    color: #e4e4e4;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
